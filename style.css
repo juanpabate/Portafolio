@@ -1,0 +1,469 @@
+*{
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Flex', sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.main-container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 2700px;
+  background: linear-gradient(180deg, #251436 3.7%, #33395D 20.31%, #4D7FA6 35.59%, rgba(63, 83, 155, 0.77) 70.72%, rgba(37, 20, 54, 0.6) 95.77%);
+  background: linear-gradient(180deg, #251436 3.7%, #33395D 20.31%, #4D7FA6 35.59%, rgba(63, 83, 155, 0.77) 70.72%, rgba(37, 20, 54, 0.9) 95.77%);
+}
+
+img{
+  width: 170px;
+}
+
+.navbar a{
+  text-decoration: none;
+  font-size: 20px;
+  display: flex;
+}
+
+.navbar{
+  display: flex;
+  font-weight: 400;
+  gap: 15px;
+  width: 1400px;
+  justify-content: flex-end;
+  margin: 25px auto 0;
+  height: 1%;
+}
+.navbar a:hover{
+  transition: all .2s ease;
+  border-bottom: 3px solid #E7872F;
+}
+
+.seccion-inicio{
+  display: flex;
+  gap: 20px;
+  width: 1400px;
+  height: 30%;
+  margin: 15px auto;
+  justify-content: space-between;
+} 
+
+.presentacion{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+}
+
+.saludo{
+  font-family: 'Roboto Flex';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 86px;
+}
+.nombre{
+  font-family: 'Roboto Flex';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 96px;
+}
+.oficio{
+  font-family: 'Source Code Pro', monospace;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 25px;
+  margin-top: 20px;
+}
+.oficio::before{
+  content: "<>";
+}
+.oficio::after{
+  content: "</>";
+}
+
+.logotipo{
+  display: flex;
+  background-image: url(imagenes/logo.png);
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position:right;
+  width: 50%;
+}
+.titulo{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 34px;
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  justify-content: center;
+}
+.titulo h2{
+  border-bottom: 3px solid #E7872F;
+}
+.seccion-proyectos{
+  display: flex;
+  flex-direction: column;
+  height: 33%;
+}
+
+.proyectos-tarjetas{
+  width: 1030px;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+.e-comerce{
+  background-image: url(imagenes/ecomerce.png);
+  position: relative;
+  background-image: url(imagenes/ecomerce.png);
+  background-size: cover;
+  width: 500px;
+  height: 320px;
+  overflow: hidden;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.e-comerce::before{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: -500px;
+  background-color: rgba(37, 20, 54, 0.84);
+  transition: all .3s ease-in-out;
+
+}
+.e-comerce::after{
+  content: "Página de ecommerce";
+  position: absolute;
+  top: 20%;
+  left: -500px;
+  width: 30%;
+  height: 80%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 55px;
+  transition: all .4s ease-in-out;
+
+}
+
+.e-comerce:hover::before{
+  left: 0;
+}
+.e-comerce:hover::after{
+  left: 20px;
+}
+
+.credit-card{
+  position: relative;
+  background-image: url(imagenes/credit\ card.png);
+  background-size: cover;
+  width: 500px;
+  height: 320px;
+  overflow: hidden;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.credit-card::before{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: -500px;
+  background-color: rgba(37, 20, 54, 0.84);
+  transition: all .3s ease-in-out;
+
+}
+.credit-card::after{
+  content: "Formulario tarjeta de crédito";
+  position: absolute;
+  top: 10%;
+  left: -500px;
+  width: 30%;
+  height: 80%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 55px;
+  transition: all .4s ease-in-out;
+
+}
+
+.credit-card:hover::before{
+  left: 0;
+}
+.credit-card:hover::after{
+  left: 20px;
+}
+
+.countriesapi{
+  position: relative;
+  background-image: url(imagenes/cauntriesapi.png);
+  background-size: cover;
+  width: 500px;
+  height: 320px;
+  overflow: hidden;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.countriesapi::before{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: -500px;
+  background-color: rgba(37, 20, 54, 0.84);
+  transition: all .3s ease-in-out;
+
+}
+.countriesapi::after{
+  content: "Países del mundo API";
+  position: absolute;
+  top: 10%;
+  left: -500px;
+  width: 45%;
+  height: 80%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 55px;
+  transition: all .4s ease-in-out;
+
+}
+
+.countriesapi:hover::before{
+  left: 0;
+}
+.countriesapi:hover::after{
+  left: 20px;
+}
+
+.todolist{
+  position: relative;
+  background-image: url(imagenes/todolist.jpg);
+  background-size: cover;
+  width: 500px;
+  height: 320px;
+  overflow: hidden;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.todolist::before{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: -500px;
+  background-color: rgba(37, 20, 54, 0.84);
+  transition: all .3s ease-in-out;
+
+}
+.todolist::after{
+  content: "Tablero de control de tiempo";
+  position: absolute;
+  top: 15%;
+  left: -500px;
+  width: 45%;
+  height: 80%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  transition: all .4s ease-in-out;
+
+}
+
+.todolist:hover::before{
+  left: 0;
+}
+.todolist:hover::after{
+  left: 20px;
+}
+
+
+.habilidades-section{
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+}
+.habilidades{
+  width: 1000px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.habilidades1, .habilidades2{
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+.habilidad img{
+  width: 200px;
+}
+.habilidad p{
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.contacto-section{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.contactos{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+.contactos img{
+  width: 50px;
+  cursor: pointer;
+}
+
+@media (max-width: 870px) {
+  .main-container{
+    max-width: 390px;
+    width: 100vh;
+    margin: auto;
+    height: 100%;
+  }
+  .navbar{
+    width: 90%;
+    justify-content: space-around;
+    gap: 5px;
+  }
+  .navbar a{
+    font-size: 15px;
+  }
+  .seccion-inicio{
+    position: relative;
+    flex-direction: column;
+    gap: 20px;
+    width: 90%;
+    height: 300px;
+    margin: 35px auto;
+    justify-content: space-between;
+  } 
+  
+  .presentacion{
+    width: 100%;
+    justify-content: center;
+    z-index: 5;
+  }
+  
+  .saludo{
+    font-size: 56px;
+  }
+  .nombre{
+    font-size: 66px;
+  }
+  .oficio{
+    font-size: 18px;
+  }
+  .logotipo{
+    position: absolute;
+    display: flex;
+    height: 35%;
+    right: 25px;
+    top: 45%;
+    z-index: 1;
+  }
+
+  .titulo{
+    font-size: 24px;
+  }
+  .seccion-proyectos{
+    height: 1100px;
+  }
+  .proyectos-tarjetas{
+    width: 90%;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 30px;
+  }
+  .e-comerce{
+    width: 320px;
+    height: 220px;
+  }
+  .e-comerce::before{
+    left: -320px;  
+  }
+  .e-comerce::after{
+    left: -320px;
+    font-size: 35px;  
+  }
+
+  .credit-card{
+    width: 320px;
+    height: 220px;
+  }
+  .credit-card::before{
+    left: -320px;  
+  }
+  .credit-card::after{
+    left: -320px;
+    font-size: 35px;  
+  }
+
+  .countriesapi{
+    width: 320px;
+    height: 220px;
+  }
+  .countriesapi::before{
+    left: -320px;  
+  }
+  .countriesapi::after{
+    left: -320px;
+    font-size: 35px;  
+  }
+
+  .todolist{
+    width: 320px;
+    height: 220px;
+  }
+  .todolist::before{
+    left: -320px;  
+  }
+  .todolist::after{
+    top: 20%;
+    width: 75%;
+    left: -320px;
+    font-size: 35px;  
+  }
+
+  .habilidades-section{
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+  }
+  .habilidades{
+    width: 100%;
+  }
+  .habilidades1, .habilidades2{
+    gap: 15px;
+  }
+  .habilidad img{
+    width: 75px;
+  }
+  .habilidad p{
+    font-size: 10px;
+  }
+
+  .contacto-section{
+    margin: 50px 0;
+  }
+  .contactos{
+    gap: 70px;
+  }
+  .contactos img{
+    width: 40px;
+  }
+}
